@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+
+            width: 90%;
+
+            height: 100px;
+
+            background-color: #1996F5;
+
+            border: 3px solid #072C46;
+
+            padding: 10px;
+
+            margin: 25px;
+
+            }
+
+
+
+        nav {
+
+            position: fixed;
+
+            width: 90%;
+
+            height: 50px;
+
+            background-color: #1996F5;
+
+            border: 2px dashed #072C46;
+
+            position: fixed;
+
+            top: 170px;
+
+            left: 35px;
+
+            }
+
+
+
+        article {
+
+            width: 65%;
+
+            height: 200px;
+
+            background-color: #1996F5;
+
+            border: 5px solid #072C46;
+
+            position: relative;
+
+            top: 15px;
+
+            }
+
+
+
+        aside {
+
+            width: 40%;
+
+            height: 420px;
+
+            background-color: #1996F5;
+
+            border: 3px solid #072C46;
+
+            position: absolute;
+
+            left: 50%;
+
+            right: 10%;
+
+            top: 235px;
+
+            }
+
+
+
+        footer {
+
+            width: 100%;
+
+            height: 50px;
+
+            background-color: #1996F5;
+
+            border-top: 3px solid #072C46;
+
+            position: fixed;
+
+            bottom: 0px;
+
+            }
+
+
+
+        .articles {
+
+            position: relative;
+
+            left: 30px;
+
+            top: 45px;
+
+            width: 65%;
+
+            height: 70%;
+
+}
+
+</style>
+</head>
+
+<body>
+    <header>The nav element has no position property therefore it is by default set to static. This means it is just placed in the normal flow of a document.
+
+    </header>
+
+    <nav>
+        <p>The nav element's position property is set to fixed, with a top offset of 170px and a left offset of 30px. Since it has no container, the offsets are in relation to the entire webpage. Because it is fixed, the nav bar will stay in that exact position regardless of the user scrolling down or up.</p>
+    </nav>
+
+    <div>
+
+        <div class="articles">
+            <article>Both articles are placed within the "articles" div class container. The "articles" container is set to relative with a left and top displacement of 30 and 45 pixels. Since the "articles" container is written after the nav bar, it is an element 30px to the right and 45 px below what it's normal webpage flow position would be.</p>
+                <p>Both of the articles' position properties are set to relative. They both have a displacement of "top: 15px". So the first article's normal position would be in the top left of the "articles" container, but it starts 15 px below that because of the displacement. </p>
+            </article>
+
+            <article>The second article's position property is relative. Since it is written after the first article, its normal position would be stacked below the previous article. But it is also given a displacement of top: 15px so it begins 15 px below its normal position- below the first article.</article>
+
+        </div>
+
+    <aside>
+        <p> The aside element's position property is set to absolute with left: 50%; right: 10%; and top: 235px; displacements. Absolute positioning implies the displacements are in relation to the element's container, which in this case is the entire webpage. So it is placed 235px below the top of the page, 50% from the left side, and 10% from the right side of the page.</p>
+    </aside>
+
+    </div>
+
+    <footer>
+        <p>
+            The footer element has a fixed position and is displaced 0px from the bottom of the webpage. The fixed position and displacement implies it will always stay at the bottom of the page regardless of the viewport.
+        </p>
+    </footer>
+</body>
+</html>
