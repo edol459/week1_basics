@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pokemon Card</title>
+  <style>
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    .card{
+    height: 500px;
+    width: 400px;
+    background-color: #1FB3E8;
+    border: 20px solid #FFE164;
+    border-radius: 20px;
+    position: relative;
+    }
+
+    .card-header{
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    }
+
+    .typebox{
+    height: 20px;
+    width: 70px;
+    background-color: #D7D9DA;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    }
+
+    .card-imageArea{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    }
+
+    .card-imageArea img {
+    height: 200px; 
+    width: 350px; 
+    position: absolute; 
+    left: 20px;
+    border: 2px solid #D7D9DA;
+    }
+
+    .infobar{
+    height: 15px;
+    width: 350px; 
+    background-color: #D7D9DA;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    }
+
+    .card-body{
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    top: 280px;
+    }
+
+    .card-footer{
+    height: 70px;
+    width: 400px;
+    position: absolute; 
+    top: 430px;
+    }
+</style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="card">
+
+    <div class="card-header">
+      <div class="typebox">
+        <p style="margin: 0; text-align: center;">BASIC</p>
+      </div>
+      <h1 style="margin: 0; position: absolute; left: 80px; top: 15px;">Piplup</h1>
+      <h2 style="margin: 0; position: absolute; right: 60px; top: 15px;"">HP 60</h2>
+      <img style="height: 30px; width: 30px; position: absolute; right: 20px; top: 15px;" src="water.png">
+    </div>
+
+    <div class="card-imageArea">
+      <img src="piplupimg.png">
+      <div class="infobar">
+        <p style="margin: 0; text-align: center;">NO. 393 Penguin Pokemon HT. 1'04" WT: 11.5 lbs.</p>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img style="height: 20px; width: 20px; position: absolute; left: 5px; top: 20px;" src="water.png">
+      <h2 style="margin: 0; position: absolute; left: 100px; top: 20px;">Splatter</h2>
+      <p style="margin: 0; position: absolute; left: 10px; top: 50px;">This attack does 20 damage to 1 of your opponent's          Pokemon. (Don't apply Weakness and Resistance for Benched Pokemon.)</p>
+    </div>
+
+    <div class="card-footer">
+      
+      <p style="margin: 0; position: absolute; left: 10px; top: 20px;">weakness</p>
+      <img style="height: 20px; width: 20px; position: absolute; left: 75px; top:
+        20px;" src="electric.jpg">
+      <p style="margin: 0; position: absolute; left: 100px; top: 20px;">x2</p>
+      <p style="margin: 0; position: absolute; left: 130px; top:
+        20px;">resistance</p>
+      <p style="margin : 0; position: absolute; right: 80px; top: 20px;"> retreat</p>
+      <img style="height: 20px; width: 20px; position: absolute; right: 50px; top:
+        20px;" src="normal.webp">
+      <p style="font-size: xx-small; position: absolute; right: 20px; top: 35px;
+        text-align: center">Because it is very proud, it hates accepting food</p>
+      <p style="font-size: xx-small; position: absolute; right: 20px; top: 45px;
+        text-align: center">from people. Its thick down guards it from cold.</p>
+      <p style="font-size: xx-small; margin: 0; position: absolute; top: 45px;
+        left: 10px;">Illus: Ken Sugimori </p>
+      <p style="font-size: xx-small; margin: 0; position: absolute; top: 55px;
+        left: 10px;"> 31/156</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
